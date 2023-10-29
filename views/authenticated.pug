@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content
+  .container.main
+    h3 Welcome Studensite Universitas Kuningan #{userInfo.displayName},
+    p.lead.mb-5 You have successfully authenticated with IBM Security Verify.
+    .container
+      .row
+        .col-md-8
+          table.table.table-bordered
+            tbody
+              tr
+                th Nama
+                td Acep Triana
+              tr
+                th Semester Terakhir
+                td 4
+              tr
+                th NIM
+                td 20210910002
+              tr
+                th Kelas
+                td SINFC-2021-05
+              tr
+                th IPK Terakhir
+                td 3.80
+              tr
+                th Jumlah SKS yang telah diambil
+                td 82
+    .container
+      .row
+        .col-md-6
+          a(href=`/logout`).btn.btn-primary log out

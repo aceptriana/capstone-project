@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+
+
+  .container.main
+    .row
+      .col-md-6
+        h1 Login Mahasiswa
+        p Implementasi IBM Security Verify untuk Meningkatkan Keamanan dan Efisiensi Manajemen Identitas dan Akses Di Studensite Universitas Kuningan
+        form#loginForm
+          .form-group
+            label(for='username') <b>Username : </b>
+            input.form-control(type='text', id='username')
+          .form-group
+            label(for='password') <b>Password : </b>
+            input.form-control(type='password', id='password')
+		
+          button.btn.btn-primary(type='button', onclick='authorizeApplication()') Login
+          
+          a(href='#', onclick='forgotPassword()') | Lupa Password?
+
+      .col-md-6
